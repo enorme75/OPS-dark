@@ -5232,3 +5232,8 @@ img {
   height:140px;
   width:140px;
 }
+
+.group_image {
+    min-height: 140px;
+    min-width: 140px;
+}
