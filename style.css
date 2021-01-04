@@ -5234,6 +5234,14 @@ img {
 }
 
 .group_image {
-    min-height: 140px;
-    min-width: 140px;
+	min-height: 140px;
+    	min-width: 140px;
+    	height:140px;
+  	width:140px;
+}
+
+.group_image:hover img {
+    -webkit-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2);
 }
