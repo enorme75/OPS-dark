@@ -5246,7 +5246,9 @@ ol.navigation_list li li {
     transform: scale(2.2);
 }
 
+@media (min-width:1090px) {
 #userinfo_major li#nav_bonus a.tooltip {
     text-indent: -50px;
     line-height: 30px;
+}
 }
