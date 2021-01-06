@@ -5228,6 +5228,7 @@ ol.navigation_list li li {
 
 /* ADD ENORME 75 */
 
+@media (min-width:700px) {
 .group_image img {
   height:140px;
   width:140px;
@@ -5244,6 +5245,7 @@ ol.navigation_list li li {
     -webkit-transform: scale(2.2);
     -ms-transform: scale(2.2);
     transform: scale(2.2);
+}
 }
 
 @media (min-width:1090px) {
