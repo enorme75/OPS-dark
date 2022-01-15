@@ -4756,7 +4756,7 @@ span.remove_bookmark a:hover {
     font-size: 12px;
     line-height: normal;
     padding: 2px 0 0;
-    visibility: hidden;
+    visibility: inherit;
     margin-bottom: -1px
 }
 .tags a {
