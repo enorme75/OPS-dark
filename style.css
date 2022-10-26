@@ -5265,3 +5265,32 @@ ol.navigation_list li li {
 #wiki .create_form td:first-of-type strong {
     font-weight: 400
 }
+
+/* ADD ENORME 75 */
+
+@media (min-width:700px) {
+.group_image img {
+  height:140px;
+  width:140px;
+}
+
+.group_image {
+	min-height: 140px;
+    	min-width: 140px;
+    	height:140px;
+  	width:140px;
+}
+
+.group_image:hover img {
+    -webkit-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2);
+}
+}
+
+@media (min-width:1090px) {
+#userinfo_major li#nav_bonus a.tooltip {
+    text-indent: -50px;
+    line-height: 30px;
+}
+}
