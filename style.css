@@ -5294,3 +5294,18 @@ ol.navigation_list li li {
     line-height: 30px;
 }
 }
+
+/* Hack colonne */
+
+.linkbox>span.add_bookmark, .linkbox>span.remove_bookmark {
+  float: none;
+  border: none;
+  background: none;
+}
+
+.linkbox>span.add_bookmark a, .linkbox>span.remove_bookmark a {
+  font-size: 13px;
+  height: auto;
+  width: auto;
+  background: none !important;
+}
