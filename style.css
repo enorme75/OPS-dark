@@ -246,14 +246,18 @@ table.forum_post .colhead_dark td {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 32px;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 15px;
     vertical-align: middle;
+    position: relative !important;
+    z-index: 5000;
     background: #0e0f11;
     background: -webkit-linear-gradient(top, #271818, ##0e0f11);
     background: -o-linear-gradient(top, #271818 0, #0e0f11 100%);
-    background: linear-gradient(180deg, #271818 0, #0e0f11);
-    border: 1px solid #362424;
-    color: #846767;
+/*This is the gradient for the forum posts where username is etc */    
+    background: linear-gradient(180deg, #0e1f1a 0, #0d4839);
+    border: 1px solid #104336;
+/* This affects the color of User Classes and Post time in the forums */
+    color: #919696;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
 }
 #better table,
@@ -336,12 +340,15 @@ table.staff .rowb {
 .wiki_log_table tr.colhead_dark td,
 .wiki_log_table tr.colhead td,
 table.staff tr.colhead_dark td,
+/*Seems to affect the Torrents Size and the area that is like 'this album is in 2 collages' */
 table.staff tr.colhead td {
-    color: #fd5656;
+    color: #22b18d;
     font-size: 1.1em;
     padding-bottom: 10px;
     padding-top: 10px;
     vertical-align: middle;
+    position: relative !important;
+    z-index: 5000;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0, hsla(0, 0%, 4%, .4)), to(hsla(0, 0%, 8%, .35)));
     background: -webkit-linear-gradient(bottom, hsla(0, 0%, 4%, .4), hsla(0, 0%, 8%, .35));
     background: -o-linear-gradient(bottom, hsla(0, 0%, 4%, .4) 0, hsla(0, 0%, 8%, .35) 100%);
@@ -380,7 +387,7 @@ table.staff .colhead a {
 .users_reports_table .colhead a:hover,
 .wiki_log_table .colhead a:hover,
 table.staff .colhead a:hover {
-    color: #bd8282
+    color: #22d1a5
 }
 #better table tr.colhead_dark strong,
 #better table tr.colhead strong,
@@ -508,6 +515,20 @@ table.staff tr:not(.colhead):not(.colhead_dark):hover td {
     width: 100%;
     background: #212324
 }
+div#flip_view_1 div#similar-artist .name {
+border: 1px solid #b9bdbd;
+background: rgba(60,60,60,.7);
+color: #b9bdbd;
+margin: 0;
+padding: 0 5px;
+}
+
+div#flip_view_1 svg a:hover {
+fill: #83e4a6;
+}
+div#flip_view_1 svg a {
+fill: #f0f0f0;
+}
 #artist_information .colhead,
 #artist_information .head,
 #similar_artist_map .colhead,
@@ -521,7 +542,7 @@ table.staff tr:not(.colhead):not(.colhead_dark):hover td {
     background: -webkit-linear-gradient(bottom, #222, #202020);
     background: -o-linear-gradient(bottom, #222 0, #202020 100%);
     background: linear-gradient(0deg, #222 0, #202020);
-    background: #241b1b;
+    background: #19372f;
     border-bottom-color: #333;
     color: #8a8889;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .45)
@@ -593,7 +614,7 @@ body {
     overflow-wrap: break-word;
     position: relative;
     background-color: #1a1c1d;
-    background-image: url(../assets/backgrounds/background.jpg)
+    background-image: url(..//assets/backgrounds/background.jpg)
 }
 @media only screen and (max-width: 789px) {
     body {
@@ -612,7 +633,8 @@ a:hover {
     text-decoration: none
 }
 a:hover {
-    color: #ff9060
+/*Link Hover Color */
+    color: #22d1a5
 }
 #userform td:not(.label) > strong,
 h1,
@@ -631,7 +653,7 @@ h2 {
 #userform td:not(.label) > strong,
 .donation_info_title,
 h3 {
-    color: #e35151;
+    color: #22b18d;
     font-size: 1.3em;
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -640,7 +662,7 @@ h3 {
 }
 h2 a,
 h3 a {
-    color: #e35151
+    color: #22b18d
 }
 p {
     margin: 10px 0
@@ -745,9 +767,10 @@ input[type=search]:focus,
 input[type=text]:focus,
 input[type=url]:focus,
 select:focus,
+/* Search Bars color thing */
 textarea:focus {
     outline: none;
-    border: 1px solid hsla(0, 100%, 89%, .3)!important;
+    border: 1px solid #197a61!important;
     color: #ccc
 }
 input[type=password]:invalid,
@@ -808,8 +831,9 @@ input[type=checkbox] + label {
     margin: 3px;
     vertical-align: middle
 }
+#browse torrents page?
 input[type=checkbox] + label {
-    margin: 2px 10px 2px 0;
+    margin: 2px 10px 2px 20px;
     -webkit-transition: all .15s linear;
     -o-transition: all .15s linear;
     transition: all .15s linear;
@@ -906,10 +930,10 @@ h3 strong {
     font-weight: 300
 }
 .header h2 a {
-    color: #e35151
+    color: #22b18d
 }
 .header h2 a:hover {
-    color: #c87
+    color: #22d1a5
 }
 td.label {
     font-weight: 400;
@@ -1030,7 +1054,7 @@ p.min_padding {
     font-size: 1.1em;
     padding: 4px 10px 5px;
     border-bottom: 1px solid #303134;
-    color: #e35151;
+    color: #22b18d;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .35)
 }
 .head strong {
@@ -1155,7 +1179,7 @@ p.min_padding {
     filter: brightness(100%)
 }
 .icon_remove {
-    background-image: url(../assets/icons/Remove.svg)
+    background-image: url(../assets/icons/Removeblue.svg)
 }
 .additional_add_artist a,
 .remove a,
@@ -1234,8 +1258,9 @@ a.vote_tag_up:hover {
 #rules h5,
 #torrents table:not(.forum_post) .colhead_dark,
 .sidebar .colhead_dark,
+/*Add Artist, Add to collage etc */
 .sidebar .head {
-    color: #f58080;
+    color: #22b18d;
     font-family: apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
     font-weight: 400;
     padding: 2px 5px 7px 4px;
@@ -1256,7 +1281,7 @@ a.vote_tag_up:hover {
 .colhead a:hover,
 .sidebar .colhead_dark a:hover,
 .sidebar .head a:hover {
-    color: #bd8282
+    color: #22b18d
 }
 #artist #discog_table > .center a,
 #artist .header > .linkbox a,
@@ -1529,7 +1554,7 @@ strong.mature + strong + br + a {
     order: 1;
     padding: 0 5px;
     text-align: center;
-    z-index: 10;
+    z-index: 12;
     background: 0e0f11;
     border-bottom: 1px solid #28292a;
     -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
@@ -1669,79 +1694,80 @@ strong.mature + strong + br + a {
 #userinfo_minor:hover li:hover a {
     background-position: right 5px center, 0 bottom;
     text-decoration: none;
-    color: #e35151
+    color: #22b18d
 }
+/*All the gradients for the user panel */
 #nav_inbox a {
-    background-image: url(../assets/icons/Header-Messages-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Messages-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Messages-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Messages-read.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Messages-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Messages-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Messages-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Messages-read.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_staffinbox a {
-    background-image: url(../assets/icons/Header-Staff-messages.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Staff-messages.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Staff-messages.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Staff-messages.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Staff-messages.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Staff-messages.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Staff-messages.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Staff-messages.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_uploaded a {
-    background-image: url(../assets/icons/Header-Uploads.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Uploads.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Uploads.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Uploads.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Uploads.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Uploads.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Uploads.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Uploads.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_bookmarks a {
-    background-image: url(../assets/icons/Header-Bookmark.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Bookmark.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Bookmark.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Bookmark.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Bookmark.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Bookmark.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Bookmark.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Bookmark.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_notifications a {
-    background-image: url(../assets/icons/Header-Notifications-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Notifications-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Notifications-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Notifications-read.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Notifications-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Notifications-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Notifications-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Notifications-read.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_subscriptions a {
-    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Subscriptions-read.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Subscriptions-read.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Subscriptions-read.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_comments a {
-    background-image: url(../assets/icons/Header-Comments.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Comments.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Comments.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Comments.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Comments.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Comments.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Comments.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Comments.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_friends a {
-    background-image: url(../assets/icons/Header-Friends.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Friends.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Friends.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Friends.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Friends.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Friends.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Friends.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Friends.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_better a {
-    background-image: url(../assets/icons/Header-Better.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Better.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Better.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Better.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Better.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Better.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Better.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Better.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_posts a {
-    background-image: url(../assets/icons/Header-Posts.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Posts.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Posts.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Posts.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Posts.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Posts.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Posts.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Posts.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_logchecker a {
-    background-image: url(../assets/icons/Wiki-Log.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Wiki-Log.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Wiki-Log.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Wiki-Log.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Wiki-Log.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Wiki-Log.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Wiki-Log.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Wiki-Log.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #nav_subscriptions.new-subscriptions a {
-    background-image: url(../assets/icons/Header-Subscriptions-new.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #e35151), to(#7f2d2d));
-    background-image: url(../assets/icons/Header-Subscriptions-new.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #e35151 0, #7f2d2d);
-    background-image: url(../assets/icons/Header-Subscriptions-new.svg), -o-linear-gradient(right, #252525, #252525 50%, #e35151 50%, #7f2d2d);
-    background-image: url(../assets/icons/Header-Subscriptions-new.svg), linear-gradient(270deg, #252525, #252525 50%, #e35151 0, #7f2d2d)
+    background-image: url(../assets/icons/Header-Subscriptions-new-blue.svg), -webkit-gradient(linear, right top, left top, from(#252525), color-stop(50%, #252525), color-stop(50%, #22b18d), to(#4a8e7d));
+    background-image: url(../assets/icons/Header-Subscriptions-new-blue.svg), -webkit-linear-gradient(right, #252525, #252525 50%, #22b18d 0, #4a8e7d);
+    background-image: url(../assets/icons/Header-Subscriptions-new-blue.svg), -o-linear-gradient(right, #252525, #252525 50%, #22b18d 50%, #4a8e7d);
+    background-image: url(../assets/icons/Header-Subscriptions-new-blue.svg), linear-gradient(270deg, #252525, #252525 50%, #22b18d 0, #4a8e7d)
 }
 #userinfo_major li {
     display: inline-block
@@ -1824,10 +1850,10 @@ ul#userinfo_username li:not(#nav_userinfo) a {
     -webkit-transition: background-position .3s linear;
     -o-transition: background-position .3s linear;
     transition: background-position .3s linear;
-    background: #0e0f11 -webkit-gradient(linear, right top, left top, from(#0e0f11), color-stop(50.5%, #0e0f11), color-stop(50.5%, #e35151), to(#7f2d2d)) no-repeat 100% bottom;
-    background: #0e0f11 -webkit-linear-gradient(right, #0e0f11, #0e0f11 50.5%, #e35151 0, #7f2d2d) no-repeat 100% bottom;
-    background: #0e0f11 -o-linear-gradient(right, #0e0f11, #0e0f11 50.5%, #e35151 50.5%, #7f2d2d) no-repeat 100% bottom;
-    background: #0e0f11 linear-gradient(270deg, #0e0f11, #0e0f11 50.5%, #e35151 0, #7f2d2d) no-repeat 100% bottom;
+    background: #0e0f11 -webkit-gradient(linear, right top, left top, from(#0e0f11), color-stop(50.5%, #0e0f11), color-stop(50.5%, #22b18d), to(#4a8e7d)) no-repeat 100% bottom;
+    background: #0e0f11 -webkit-linear-gradient(right, #0e0f11, #0e0f11 50.5%, #22b18d 0, #4a8e7d) no-repeat 100% bottom;
+    background: #0e0f11 -o-linear-gradient(right, #0e0f11, #0e0f11 50.5%, #22b18d 50.5%, #4a8e7d) no-repeat 100% bottom;
+    background: #0e0f11 linear-gradient(270deg, #0e0f11, #0e0f11 50.5%, #22b18d 0, #4a8e7d) no-repeat 100% bottom;
     background-size: 200% 2px
 }
 ul#userinfo_username:hover li:nth-of-type(3) {
@@ -2062,10 +2088,10 @@ ul#userinfo_username:hover li#nav_userinfo a {
     color: #ccc
 }
 #menu ul li a:after {
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #7f2d2d), to(#e35151));
-    background: -webkit-linear-gradient(left, #7f2d2d, #e35151);
-    background: -o-linear-gradient(left, #7f2d2d 0, #e35151 100%);
-    background: linear-gradient(90deg, #7f2d2d 0, #e35151);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #4a8e7d), to(#22b18d));
+    background: -webkit-linear-gradient(left, #4a8e7d, #22b18d);
+    background: -o-linear-gradient(left, #4a8e7d 0, #22b18d 100%);
+    background: linear-gradient(90deg, #4a8e7d 0, #22b18d);
     border-radius: 3px;
     bottom: 3px;
     content: "";
@@ -2419,10 +2445,10 @@ ul#userinfo_username:hover li#nav_userinfo a {
 .noty_buttons a {
     margin: 0 10px;
     padding: 10px;
-    color: #e35151
+    color: #22b18d
 }
 .noty_buttons a:hover {
-    color: #ff7373
+    color: #22d1a5
 }
 @media screen and (max-width: 1200px) {
     .staff-tools {
@@ -3213,7 +3239,7 @@ ul#userinfo_username:hover li#nav_userinfo a {
 ul.collage_images {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display:flex !important;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -3239,7 +3265,7 @@ ul.collage_images li {
     width: 20%
 }
 ul.collage_images li:not([class^=image_group]) {
-    height: 0;
+    height: 100%;
     padding: 0
 }
 ul.collage_images li:before {
@@ -3256,7 +3282,7 @@ ul.collage_images img {
     margin: auto;
     max-height: 100%;
     max-width: 100%;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
     width: auto;
@@ -3264,9 +3290,10 @@ ul.collage_images img {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     box-shadow: 0 0 5px rgba(0, 0, 0, .5)
 }
+/*In the collage page there's a glow around albums and below determines the color */
 ul.collage_images img:hover {
-    -webkit-box-shadow: 0 0 5px rgba(150, 30, 20, .6);
-    box-shadow: 0 0 5px rgba(150, 30, 20, .6)
+    -webkit-box-shadow: 0 0 5px #22b18d;
+    box-shadow: 0 0 5px #22b18d
 }
 ul.collage_images li a {
     color: #555;
@@ -3395,18 +3422,18 @@ table.forum_post .colhead_dark td .post_id {
     float: left;
     margin-left: -17px;
     margin-right: 4px;
-    background-image: url(../assets/post_icons/postid-dark.png)
+    background-image: url(../assets/post_icons/postid-opsdark.png)
 }
 table.forum_post .colhead_dark td a[id*=quote] {
-    background-image: url(../assets/post_icons/quote-dark.png)
+    background-image: url(../assets/post_icons/quote-opsdark.png)
 }
 table.forum_post .colhead_dark td div[style="float: right;"]:last-of-type > a:first-of-type {
-    background-image: url(../assets/post_icons/report-dark.png)
+    background-image: url(../assets/post_icons/report-opsdark.png)
 }
 table.forum_post .colhead_dark td .go_to_top {
     float: right;
     margin: 0 0 0 -4px;
-    background-image: url(../assets/post_icons/top-dark.png)
+    background-image: url(../assets/post_icons/top-opsdark.png)
 }
 .colhead_dark strong { font-weight: normal; }
 .colhead_dark a { 
@@ -3425,25 +3452,26 @@ table.forum_post .colhead_dark td > div {
     padding-left: 12px;
     vertical-align: middle
 }
+/* */
 .forum_post.forum_unread .colhead_dark td {
-    background: #230c0c;
-    background: #230c0c -webkit-gradient(linear, left bottom, left top, color-stop(0, #2b0f0f), to(#2b1212));
-    background: #230c0c -webkit-linear-gradient(bottom, #2b0f0f, #2a1010);
-    background: #230c0c -o-linear-gradient(bottom, #2b0f0f 0, #2d1313 100%);
-    background: #230c0c linear-gradient(0deg, #2b0f0f 0, #371717);
-    border-bottom: 1px solid #3d2a2a;
-    color: #bfb8b8
+    background: #22d1a5;
+    background: #22d1a5 -webkit-gradient(linear, left bottom, left top, color-stop(0, #22d1a5), to(#1b8268));
+    background: #22d1a5 -webkit-linear-gradient(bottom, #1b8268, #1b8268);
+    background: #22d1a5 -o-linear-gradient(bottom, #1b8268 0, #1b8268 100%);
+    background: #22d1a5 linear-gradient(0deg, #1b8268 0, #1a4b3f);
+    border-bottom: 1px solid #2e5e57;
+    color: #e0d7d7
 }
 .forum_post.sticky_post {
     overflow: hidden
 }
 .forum_post.sticky_post .colhead_dark td {
-    background: #392a20;
-    border-bottom-color: #271f1b;
-    border-left-color: #342924;
-    border-right-color: #342924;
-    border-top-color: #443429;
-    color: #746459
+    background: #167d63;
+    border-bottom-color: #000;
+    border-left-color: #060606;
+    border-right-color: #1f1f1e;
+    border-top-color: #161515;
+    color: #e0d7d7
 }
 .forum_post.sticky_post .colhead_dark td img {
     padding-left: 2px;
@@ -3455,7 +3483,7 @@ table.forum_post .colhead_dark td > div {
 }
 .forum_post.sticky_post .sticky_post_label {
     text-transform: uppercase;
-    color: #a88c4f
+    color: #e3bc67
 }
 .forum_post.sticky_post .sticky_post_label:before {
     content: "- "
@@ -3517,11 +3545,12 @@ table.forum_post td.body {
     font-weight: 400;
     color: #f0f0f0
 }
+/*When you hover over a forum section such as Announcements */
 .forum_index a:hover {
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
     transition: all .1s linear;
-    color: #ff8354
+    color: #22d1a5
 }
 .forum_index tr:not(.colhead),
 table.forum_list tr:not(.colhead) {
@@ -3553,10 +3582,13 @@ table.forum_list tr:last-of-type td {
     border-bottom: 0
 }
 .forum_index tr.colhead td,
+/*Forum Last post colors on the index of the forum */
 table.forum_list tr.colhead td {
+    position: relative !important;
+    z-index: 5000;
     padding-left: 8px;
     padding-right: 25px;
-    color: #f58080;
+    color: #22b18d;
     text-transform: uppercase
 }
 .forum_list.border td {
@@ -3581,8 +3613,8 @@ table.forum_list tr.colhead td {
 #forums div.box.thin.clear .colhead_dark {
     font-size: unset;
     padding: 8px;
-    background: #2b0f0f;
-    border: 1px solid #3a1e1e;
+    background: #153e34;
+    border: 1px solid #23443b;
     color: #bfb8b8
 }
 #forums div.box.thin.clear .colhead_dark a {
@@ -3635,7 +3667,7 @@ form#poll input {
     width: 100%
 }
 .unread_locked_sticky {
-    background-image: url(../assets/icons/Forum-Dark-Pinned-Locked.svg)
+    background-image: url(../assets/icons/Forum-Blue-Pinned-Locked.svg)
 }
 .read_locked_sticky,
 .unread_locked_sticky {
@@ -3660,10 +3692,10 @@ form#poll input {
     width: 22px
 }
 .unread_sticky {
-    background-image: url(../assets/icons/Forum-Dark-Pinned.svg)
+    background-image: url(../assets/icons/Forum-Blue-Pinned.svg)
 }
 .unread_locked {
-    background-image: url(../assets/icons/Forum-Dark-Locked.svg)
+    background-image: url(../assets/icons/Forum-Blue-Locked.svg)
 }
 .read_locked,
 .unread_locked {
@@ -3677,7 +3709,7 @@ form#poll input {
     background-image: url(../assets/icons/Forum-Dark-Locked-Read.svg)
 }
 .unread {
-    background-image: url(../assets/icons/Forum-Dark-Unread.svg)
+    background-image: url(../assets/icons/Forum-Blue-Unread.svg)
 }
 .read,
 .unread {
@@ -3700,7 +3732,7 @@ form#poll input {
 #forums .search_form .cat_list td.forum_cat strong {
     display: inline-block;
     padding: 10px 2px 3px 4px!important;
-    color: #e35151
+    color: #22b18d
 }
 #forums .search_form .cat_list td.forum_cat a {
     font-size: 1em;
@@ -3810,10 +3842,10 @@ li.graph {
     height: 14px;
     overflow: hidden;
     position: relative;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#401a1a), to(#501414));
-    background-image: -webkit-linear-gradient(top, #401a1a, #501414);
-    background-image: -o-linear-gradient(top, #401a1a, #501414);
-    background-image: linear-gradient(180deg, #401a1a, #501414)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#22d1a5), to(#22d1a5));
+    background-image: -webkit-linear-gradient(top, #22d1a5, #22d1a5);
+    background-image: -o-linear-gradient(top, #22d1a5, #22d1a5);
+    background-image: linear-gradient(180deg, #104336, #176854)
 }
 .center_poll,
 .center_poll:after {
@@ -4180,7 +4212,7 @@ span[style*="color: red;"] a {
 #rules div ul li > strong {
     font-size: 1em;
     font-weight: 400;
-    color: #d76363
+    color: #22b18d
 }
 #rules a strong {
     color: #fff
@@ -4406,8 +4438,9 @@ table.staff {
     -webkit-box-shadow: inset 0 3px 3px -3px rgba(0, 0, 0, .4), inset 0 -3px 3px -3px rgba(0, 0, 0, .4);
     box-shadow: inset 0 3px 3px -3px rgba(0, 0, 0, .4), inset 0 -3px 3px -3px rgba(0, 0, 0, .4)
 }
+/*Color for Edition, WEB Catalog number etc */
 .torrent_table tr.edition td {
-    color: #9e5252!important;
+    color: #197a61!important;
     padding: 0;
     border-bottom: 1px solid #252525;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
@@ -4466,7 +4499,7 @@ table.staff {
 .torrent_table .discog span > a:hover,
 .torrent_table .discog strong > a:hover,
 .torrent_table .group_info > a:hover {
-    color: #f44
+    color: #22d1a5
 }
 .torrent_table tr:not(.edition):not(.group):not(.colhead):not(.colhead_dark):not(.torrentdetails):hover td {
     background: hsla(0, 40%, 88%, .02)
@@ -4554,14 +4587,16 @@ table.staff {
 }
 .torrent_links_block a,
 .torrent_table .group_torrent > td > span a,
+/*DL FL RP buttons */
 .torrent_table span a {
-    color: #9e5252!important;
+    color: #22d1a5!important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .9)
 }
 .torrent_links_block a:hover,
 .torrent_table .group_torrent > td > span a:hover,
+/*DL FL RP color hove r */
 .torrent_table span a:hover {
-    color: #f58080!important
+    color: #acd0c7!important
 }
 #torrents .collage_table,
 #torrents .request_table,
@@ -4660,7 +4695,7 @@ table.staff {
 }
 .snatched_group .show_torrents_link:after,
 .snatched_group .show_torrents_link:before {
-    background-color: #ac4444
+    background-color: #22b18d
 }
 #torrents .search_form strong {
     font-weight: 400
@@ -4693,6 +4728,7 @@ table.staff {
 }
 .cat_list tr td label,
 .search_form #categories label {
+    margin: 2px 10px 2px 20px;
     display: inline-block;
     text-align: center
 }
@@ -4756,7 +4792,7 @@ span.remove_bookmark a:hover {
     font-size: 12px;
     line-height: normal;
     padding: 2px 0 0;
-    visibility: inherit;
+    visibility: hidden;
     margin-bottom: -1px
 }
 .tags a {
@@ -4773,9 +4809,10 @@ span.remove_bookmark a:hover {
     padding: 2px 6px;
     text-shadow: 1px 1px 1px rgbga(0, 0, 0, .4)
 }
+/*When you hover over tags like rock, electronic etc */
 .tags a:hover {
     background: rgba(0, 0, 0, .3);
-    color: rgba(255, 93, 93, .8)
+    color: #22d1a5
 }
 #torrents .torrentdetails div:nth-of-type(6) blockquote:last-child {
     font-size: .9em;
@@ -4821,8 +4858,9 @@ span.remove_bookmark a:hover {
     border: 1px solid #2b2a2a;
     color: #aaa
 }
+/*When you click to view the file list in a torrent */
 .torrentdetails table .colhead_dark td {
-    color: #8e4646!important
+    color: #22b18d!important
 }
 .filelist_title {
     display: none
@@ -4976,6 +5014,9 @@ span.remove_bookmark a:hover {
     text-align: center;
     width: 100%!important
 }
+#user table.recent:nth-of-type(3) tr:nth-of-type(2) td {
+padding-bottom:0 !important;
+}
 #user table.recent img,
 #user table.recent tr:nth-of-type(2) a {
     -webkit-box-sizing: border-box;
@@ -4998,7 +5039,7 @@ span.remove_bookmark a:hover {
     padding: 2%
 }
 #user table.recent img:hover {
-    background: #303234;
+    background: #22b18d;
     -webkit-box-shadow: 0 0 6px -2px rgba(235, 245, 20, 0);
     box-shadow: 0 0 6px -2px rgba(235, 245, 20, 0)
 }
@@ -5075,7 +5116,7 @@ span.remove_bookmark a:hover {
     color: #f9f1ef
 }
 #userform .sidebar #settings_sections a:hover {
-    color: #ff9060
+    color: #22b18d
 }
 #userform table td:first-of-type {
     white-space: nowrap
@@ -5223,34 +5264,4 @@ ol.navigation_list li li {
 }
 #wiki .create_form td:first-of-type strong {
     font-weight: 400
-}
-
-
-/* ADD ENORME 75 */
-
-@media (min-width:700px) {
-.group_image img {
-  height:140px;
-  width:140px;
-}
-
-.group_image {
-	min-height: 140px;
-    	min-width: 140px;
-    	height:140px;
-  	width:140px;
-}
-
-.group_image:hover img {
-    -webkit-transform: scale(2.2);
-    -ms-transform: scale(2.2);
-    transform: scale(2.2);
-}
-}
-
-@media (min-width:1090px) {
-#userinfo_major li#nav_bonus a.tooltip {
-    text-indent: -50px;
-    line-height: 30px;
-}
 }
