@@ -5309,3 +5309,7 @@ ol.navigation_list li li {
   width: auto;
   background: none !important;
 }
+
+.tags {
+ visibility: inherit!important;
+}
