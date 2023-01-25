@@ -5270,15 +5270,15 @@ ol.navigation_list li li {
 
 @media (min-width:700px) {
 .group_image img {
-  height:140px;
-  width:140px;
+  height:160px;
+  width:160px;
 }
 
 .group_image {
-	min-height: 140px;
-    	min-width: 140px;
-    	height:140px;
-  	width:140px;
+	min-height: 160px;
+    	min-width: 160px;
+    	height:160px;
+  	width:160px;
 }
 
 .group_image:hover img {
