@@ -5311,5 +5311,5 @@ ol.navigation_list li li {
 }
 
 .tags {
- visibility: inherit!important;
+ visibility: visible!important;
 }
